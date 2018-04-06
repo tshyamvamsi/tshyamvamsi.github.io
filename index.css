@@ -1,0 +1,135 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+}
+
+.banner .card {
+    background: #2c2c2c;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px 2px #35eea4;
+    display: flex;
+    flex-direction: column;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-position:right; 
+    background-size:contain;
+}
+
+.banner .card .heading {
+    color: #f06023;
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1vh;
+    padding: 1vw;
+}
+
+.banner .card .sub-heading {
+    color: #1E90FF;
+    font-family: "acta-display", Georgia, Times New Roman, serif !important;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0 1vw 2vw;
+    font-style: normal;
+    font-weight: 400px;
+}
+.banner .card .heading3 {
+    color:#FFFFFF;
+    font-family: "europa", Helvetica, Arial, sans-serif !important;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1vh;
+    padding: 1vw;
+}
+
+.banner .card .sub-heading button:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 20px 0 #35eea4;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.bold{
+    color="#f06023";
+    font-style: normal;
+    font-weight: 400;
+    padding: 5vw 5vw 5vw 0;
+}
+/*Small screens*/
+@media only screen and (max-width: 901px) {
+    .row {
+        flex-direction: column;
+    }
+    
+    .banner .card {
+        background-image: url("image1.jpg");
+       display: flex;
+    flex-direction: column;
+    background-size:cover;
+    }
+
+    .banner .card .heading {
+        margin-bottom: 1vh;
+        font-weight: 100;
+        font-size: larger;
+    padding: 1vw;
+    }
+    .banner .card .heading3 {
+    color: #f06023;
+    }
+}
+
+/*large screen*/
+@media only screen and (min-width: 901px){
+
+}
+
+.bold{
+    color:#f06023;
+    font-family: "europa", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 3vw 1vw 1vw 0vw;
+}
+.paragraph {
+    color: #2c2c2c;
+    font-family: "Istok Web", sans-serif;
+    padding: 0vw;
+   }
+.skills {
+   color: #2c2c2c;
+    font-family: "Istok Web", sans-serif;
+   }
+.projects {
+   color: #2c2c2c;
+    font-family: "Istok Web", sans-serif;
+   }
+.icon-group {
+    margin-top: 1vh;
+    padding: 0vw 10vw 0vw 0vw;
+
+}
+
+.icon-group .icon {
+    margin-right: 10px;
+    width: 25px;
+    padding: 0vw 5vw 10vw 0vw;
+
+}
